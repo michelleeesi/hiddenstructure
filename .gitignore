@@ -1,0 +1,15 @@
+# secrets
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# data / outputs (large files)
+empirics_communityalignment/
+*.parquet
+*.csv
+
+# OS
+.DS_Store
