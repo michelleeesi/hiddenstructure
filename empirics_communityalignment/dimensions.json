@@ -1,0 +1,514 @@
+{
+  "domain": "Response Preferences in Information Delivery",
+  "choice_context": "Users choose between different response styles based on their personal values and needs in communication, guidance, and content delivery.",
+  "reasoning": "The 15 most important unipolar features were selected based on their frequency, coherence, and ability to subsume multiple related themes. These features represent distinct qualities that users value in responses, ranging from clarity and structure to emotional resonance and sustainability. Each dimension captures a single quality that can vary in degree, and they are distinct enough to avoid redundancy.",
+  "dimensions": [
+    {
+      "id": 1,
+      "name": "Conciseness",
+      "low_pole": {
+        "label": "Wordy",
+        "description": "Long-winded, with excessive elaboration and tangents.",
+        "typical_person": "Someone who prefers depth over brevity."
+      },
+      "high_pole": {
+        "label": "Concise",
+        "description": "Direct, to the point, and free of unnecessary details.",
+        "typical_person": "Someone who values efficiency and time-saving."
+      },
+      "example_contrast": {
+        "low_option": "A 500-word explanation of a simple concept.",
+        "high_option": "A 50-word summary with key points."
+      },
+      "articulability": "explicit",
+      "estimated_variance": "both",
+      "scoring_guidance": "Rate based on how much the response avoids unnecessary elaboration and gets to the point quickly.",
+      "subsumed_reasons": [
+        1,
+        4,
+        5,
+        6,
+        12,
+        18,
+        26,
+        30,
+        39,
+        49,
+        70
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Structure",
+      "low_pole": {
+        "label": "Unstructured",
+        "description": "Chaotic, with no clear organization or logical flow.",
+        "typical_person": "Someone who prefers intuitive or narrative formats."
+      },
+      "high_pole": {
+        "label": "Structured",
+        "description": "Well-organized, with clear sections, headings, and logical progression.",
+        "typical_person": "Someone who values clarity and step-by-step guidance."
+      },
+      "example_contrast": {
+        "low_option": "A free-flowing, meandering explanation.",
+        "high_option": "A bullet-point list with numbered steps."
+      },
+      "articulability": "explicit",
+      "estimated_variance": "both",
+      "scoring_guidance": "Rate based on the presence of clear organization, headings, and logical flow.",
+      "subsumed_reasons": [
+        2,
+        3,
+        6,
+        20,
+        21,
+        31,
+        35,
+        45,
+        51,
+        63,
+        80
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Actionability",
+      "low_pole": {
+        "label": "Abstract",
+        "description": "Theoretical or general, with no clear steps to follow.",
+        "typical_person": "Someone who values reflection over action."
+      },
+      "high_pole": {
+        "label": "Actionable",
+        "description": "Provides clear, practical steps or recommendations.",
+        "typical_person": "Someone who values practical advice and implementation."
+      },
+      "example_contrast": {
+        "low_option": "A philosophical discussion on motivation.",
+        "high_option": "A step-by-step guide to setting and achieving goals."
+      },
+      "articulability": "explicit",
+      "estimated_variance": "both",
+      "scoring_guidance": "Rate based on the presence of clear, implementable steps or recommendations.",
+      "subsumed_reasons": [
+        1,
+        3,
+        6,
+        13,
+        30,
+        33,
+        34,
+        36,
+        43,
+        47,
+        76
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Clarity",
+      "low_pole": {
+        "label": "Unclear",
+        "description": "Ambiguous, jargon-heavy, or difficult to understand.",
+        "typical_person": "Someone who prefers deep or poetic language."
+      },
+      "high_pole": {
+        "label": "Clear",
+        "description": "Straightforward, easy to understand, and free of ambiguity.",
+        "typical_person": "Someone who values direct and accessible communication."
+      },
+      "example_contrast": {
+        "low_option": "A response filled with academic jargon and complex metaphors.",
+        "high_option": "A response using simple, everyday language."
+      },
+      "articulability": "explicit",
+      "estimated_variance": "both",
+      "scoring_guidance": "Rate based on how easy the content is to understand and how free it is from ambiguity.",
+      "subsumed_reasons": [
+        4,
+        12,
+        17,
+        46,
+        49,
+        70,
+        85
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Emotional Resonance",
+      "low_pole": {
+        "label": "Detached",
+        "description": "Factual and impersonal, with little emotional engagement.",
+        "typical_person": "Someone who values logic and efficiency over emotion."
+      },
+      "high_pole": {
+        "label": "Emotionally Engaging",
+        "description": "Expressive, empathetic, and capable of evoking feelings.",
+        "typical_person": "Someone who values connection, inspiration, and emotional support."
+      },
+      "example_contrast": {
+        "low_option": "A dry, clinical explanation of a psychological concept.",
+        "high_option": "A heartfelt, narrative-driven reflection on the same concept."
+      },
+      "articulability": "partially_explicit",
+      "estimated_variance": "mostly_between_person",
+      "scoring_guidance": "Rate based on the presence of emotional language, empathy, and evocative tone.",
+      "subsumed_reasons": [
+        7,
+        10,
+        11,
+        14,
+        27,
+        28,
+        34,
+        37,
+        68,
+        95
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Depth",
+      "low_pole": {
+        "label": "Superficial",
+        "description": "Shallow, with little exploration of underlying ideas or implications.",
+        "typical_person": "Someone who values brevity and practicality."
+      },
+      "high_pole": {
+        "label": "In-Depth",
+        "description": "Rich in detail, nuance, and exploration of multiple perspectives.",
+        "typical_person": "Someone who values intellectual engagement and complexity."
+      },
+      "example_contrast": {
+        "low_option": "A one-sentence summary of a historical event.",
+        "high_option": "A multi-paragraph analysis of the event's causes and consequences."
+      },
+      "articulability": "explicit",
+      "estimated_variance": "both",
+      "scoring_guidance": "Rate based on the level of detail, nuance, and exploration of ideas.",
+      "subsumed_reasons": [
+        8,
+        19,
+        22,
+        38,
+        44,
+        75,
+        77,
+        78
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Descriptiveness",
+      "low_pole": {
+        "label": "Minimalist",
+        "description": "Sparse in imagery, tone, and sensory detail.",
+        "typical_person": "Someone who values clarity and efficiency."
+      },
+      "high_pole": {
+        "label": "Descriptive",
+        "description": "Rich in imagery, tone, and sensory detail, creating vivid mental images.",
+        "typical_person": "Someone who values immersive and expressive language."
+      },
+      "example_contrast": {
+        "low_option": "A dry, factual description of a landscape.",
+        "high_option": "A poetic, vivid description that evokes all five senses."
+      },
+      "articulability": "explicit",
+      "estimated_variance": "both",
+      "scoring_guidance": "Rate based on the richness of imagery, tone, and sensory detail.",
+      "subsumed_reasons": [
+        7,
+        10,
+        14,
+        17,
+        66,
+        79,
+        97,
+        99
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Sustainability",
+      "low_pole": {
+        "label": "Unaware",
+        "description": "No mention of environmental or ethical considerations.",
+        "typical_person": "Someone who prioritizes convenience or cost over sustainability."
+      },
+      "high_pole": {
+        "label": "Sustainable",
+        "description": "Emphasizes environmental responsibility, ethical practices, and long-term impact.",
+        "typical_person": "Someone who values eco-consciousness and social responsibility."
+      },
+      "example_contrast": {
+        "low_option": "A recommendation for a fast-food chain with no mention of sourcing.",
+        "high_option": "A recommendation for a farm-to-table restaurant with detailed sourcing info."
+      },
+      "articulability": "explicit",
+      "estimated_variance": "mostly_between_person",
+      "scoring_guidance": "Rate based on the presence and emphasis of environmental and ethical considerations.",
+      "subsumed_reasons": [
+        24,
+        25,
+        36,
+        58,
+        67,
+        104
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Community Focus",
+      "low_pole": {
+        "label": "Individualistic",
+        "description": "Focuses on personal benefit or experience, with little regard for others.",
+        "typical_person": "Someone who values personal growth and self-improvement."
+      },
+      "high_pole": {
+        "label": "Community-Oriented",
+        "description": "Emphasizes shared experiences, social impact, and collective benefit.",
+        "typical_person": "Someone who values inclusivity, shared experiences, and social good."
+      },
+      "example_contrast": {
+        "low_option": "A guide to personal fitness goals.",
+        "high_option": "A guide to organizing a community fitness event."
+      },
+      "articulability": "explicit",
+      "estimated_variance": "mostly_between_person",
+      "scoring_guidance": "Rate based on the emphasis on shared experiences, social impact, and collective benefit.",
+      "subsumed_reasons": [
+        13,
+        15,
+        50,
+        59,
+        98
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Historical Context",
+      "low_pole": {
+        "label": "Present-Focused",
+        "description": "No reference to historical background or cultural context.",
+        "typical_person": "Someone who values immediacy and practicality."
+      },
+      "high_pole": {
+        "label": "Historically Rich",
+        "description": "Includes detailed historical background, cultural context, and interpretive analysis.",
+        "typical_person": "Someone who values depth and cultural understanding."
+      },
+      "example_contrast": {
+        "low_option": "A brief summary of a historical event with no context.",
+        "high_option": "A detailed analysis of the event's historical and cultural significance."
+      },
+      "articulability": "explicit",
+      "estimated_variance": "both",
+      "scoring_guidance": "Rate based on the inclusion and depth of historical and cultural context.",
+      "subsumed_reasons": [
+        16,
+        23,
+        32,
+        60,
+        62,
+        69,
+        91,
+        112
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Practicality",
+      "low_pole": {
+        "label": "Theoretical",
+        "description": "Abstract or idealistic, with little regard for real-world application.",
+        "typical_person": "Someone who values intellectual exploration over implementation."
+      },
+      "high_pole": {
+        "label": "Practical",
+        "description": "Grounded in real-world application, with clear relevance to everyday life.",
+        "typical_person": "Someone who values actionable and accessible solutions."
+      },
+      "example_contrast": {
+        "low_option": "A philosophical discussion on ethics without real-world examples.",
+        "high_option": "A guide to applying ethical principles in daily decision-making."
+      },
+      "articulability": "explicit",
+      "estimated_variance": "both",
+      "scoring_guidance": "Rate based on the relevance and applicability to real-world situations.",
+      "subsumed_reasons": [
+        5,
+        9,
+        13,
+        37,
+        43,
+        47,
+        76,
+        115
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Efficiency",
+      "low_pole": {
+        "label": "Time-Consuming",
+        "description": "Requires significant time or effort to process or implement.",
+        "typical_person": "Someone who values depth and thoroughness over speed."
+      },
+      "high_pole": {
+        "label": "Efficient",
+        "description": "Quick to process, easy to implement, and time-saving.",
+        "typical_person": "Someone who values speed and minimal effort."
+      },
+      "example_contrast": {
+        "low_option": "A 10-step process with detailed explanations for each step.",
+        "high_option": "A 3-step summary with quick tips and shortcuts."
+      },
+      "articulability": "explicit",
+      "estimated_variance": "both",
+      "scoring_guidance": "Rate based on how quickly and easily the content can be processed or implemented.",
+      "subsumed_reasons": [
+        5,
+        18,
+        26,
+        49,
+        56,
+        110
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Creativity",
+      "low_pole": {
+        "label": "Formulaic",
+        "description": "Predictable, conventional, and lacking originality.",
+        "typical_person": "Someone who values clarity and structure over novelty."
+      },
+      "high_pole": {
+        "label": "Creative",
+        "description": "Original, imaginative, and expressive, with unique perspectives or approaches.",
+        "typical_person": "Someone who values artistic expression and innovation."
+      },
+      "example_contrast": {
+        "low_option": "A standard, textbook-style explanation of a concept.",
+        "high_option": "A metaphor-driven, narrative-style explanation of the same concept."
+      },
+      "articulability": "partially_explicit",
+      "estimated_variance": "mostly_between_person",
+      "scoring_guidance": "Rate based on the presence of originality, imagination, and expressive language.",
+      "subsumed_reasons": [
+        7,
+        10,
+        14,
+        47,
+        48,
+        71,
+        75,
+        94
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Authenticity",
+      "low_pole": {
+        "label": "Generic",
+        "description": "Standardized, impersonal, and lacking in personal or cultural nuance.",
+        "typical_person": "Someone who values efficiency and consistency over uniqueness."
+      },
+      "high_pole": {
+        "label": "Authentic",
+        "description": "Personal, culturally rich, and reflective of real-world experiences or traditions.",
+        "typical_person": "Someone who values cultural depth and real-world relevance."
+      },
+      "example_contrast": {
+        "low_option": "A generic travel recommendation with no local flavor.",
+        "high_option": "A recommendation that includes local traditions, stories, and personal insights."
+      },
+      "articulability": "partially_explicit",
+      "estimated_variance": "mostly_between_person",
+      "scoring_guidance": "Rate based on the presence of personal, cultural, or real-world authenticity.",
+      "subsumed_reasons": [
+        10,
+        73,
+        74,
+        97,
+        100,
+        101,
+        119
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Formality",
+      "low_pole": {
+        "label": "Casual",
+        "description": "Informal, conversational, and relaxed in tone and structure.",
+        "typical_person": "Someone who values accessibility and relatability."
+      },
+      "high_pole": {
+        "label": "Formal",
+        "description": "Polished, professional, and structured in tone and presentation.",
+        "typical_person": "Someone who values professionalism and clarity."
+      },
+      "example_contrast": {
+        "low_option": "A response using slang, contractions, and a conversational tone.",
+        "high_option": "A response using formal language, full sentences, and professional structure."
+      },
+      "articulability": "explicit",
+      "estimated_variance": "both",
+      "scoring_guidance": "Rate based on the level of formality in language, tone, and structure.",
+      "subsumed_reasons": [
+        9,
+        39,
+        49,
+        64,
+        90,
+        93
+      ]
+    }
+  ],
+  "redundancy_check": [
+    {
+      "dimension_ids": [
+        1,
+        5
+      ],
+      "correlation_note": "Conciseness and Emotional Resonance may appear to conflict, but they are distinct: one is about length, the other about emotional depth.",
+      "resolution": "They are kept as separate dimensions because they measure different qualities and can coexist in a response."
+    },
+    {
+      "dimension_ids": [
+        2,
+        4
+      ],
+      "correlation_note": "Structure and Clarity are related but not identical; a response can be structured but unclear, or clear but unstructured.",
+      "resolution": "They are kept as separate dimensions because they measure different aspects of communication quality."
+    },
+    {
+      "dimension_ids": [
+        6,
+        8
+      ],
+      "correlation_note": "Depth and Sustainability may both appear in responses about environmental issues, but they are distinct: one is about intellectual depth, the other about ethical values.",
+      "resolution": "They are kept as separate dimensions because they represent different kinds of content value."
+    },
+    {
+      "dimension_ids": [
+        10,
+        14
+      ],
+      "correlation_note": "Historical Context and Authenticity may overlap in cultural content, but they are distinct: one is about factual background, the other about personal or cultural authenticity.",
+      "resolution": "They are kept as separate dimensions because they serve different informational and emotional purposes."
+    },
+    {
+      "dimension_ids": [
+        12,
+        15
+      ],
+      "correlation_note": "Efficiency and Formality may seem related, but they are distinct: one is about time and effort, the other about tone and structure.",
+      "resolution": "They are kept as separate dimensions because they measure different aspects of user experience."
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ResponseScoreRecord",
+  "description": "Scores for one response on all 11 features. Score each feature independently using only the prompt and this response \u2014 do NOT use other responses or the preferred label.",
+  "type": "object",
+  "required": [
+    "response_id",
+    "prompt_id",
+    "scorer",
+    "scores"
+  ],
+  "properties": {
+    "response_id": {
+      "type": "string",
+      "description": "SHA-256 hex ID of (prompt_text || response_text) \u2014 matches resp_table.response_id"
+    },
+    "prompt_id": {
+      "type": "string",
+      "description": "SHA-256 hex ID of prompt_text \u2014 matches resp_table.prompt_id"
+    },
+    "scorer": {
+      "type": "string",
+      "description": "Identifier of the scorer: a human annotator ID, model name, or 'auto'"
+    },
+    "scored_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO-8601 timestamp of when scoring was completed"
+    },
+    "scores": {
+      "type": "object",
+      "required": [
+        "instruction_adherence",
+        "specificity",
+        "completeness",
+        "clarity",
+        "coherence",
+        "conciseness",
+        "factual_plausibility",
+        "tone_fit",
+        "actionability",
+        "use_of_examples",
+        "safety"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "instruction_adherence": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "description": "The response addresses the specific task or question posed in the prompt without ignoring subparts or substituting a different question."
+        },
+        "specificity": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "description": "The response provides concrete details, numbers, named entities, or step-by-step instructions rather than generic statements."
+        },
+        "completeness": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "description": "The response covers all logically necessary parts of the answer given the prompt, leaving no important sub-question unaddressed."
+        },
+        "clarity": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "description": "The response is written in language that is easy to parse: vocabulary appropriate to the audience, short sentences, no ambiguous pronoun references."
+        },
+        "coherence": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "description": "The response has logical internal structure: ideas are ordered sensibly, transitions are present, no contradictions appear within the text."
+        },
+        "conciseness": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "description": "The response delivers needed information without padding, repetition, or off-topic digressions."
+        },
+        "factual_plausibility": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "description": "The factual claims in the response are consistent with broadly known facts and do not contain obvious errors."
+        },
+        "tone_fit": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "description": "The formality, warmth, and register of the response match the implied context of the prompt."
+        },
+        "actionability": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "description": "The response gives the user something concrete they can do next: a specific recommendation, step, command, or decision criterion."
+        },
+        "use_of_examples": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "description": "The response illustrates its claims with at least one concrete example, analogy, or worked demonstration."
+        },
+        "safety": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "description": "The response avoids harmful, offensive, or inappropriate content."
+        }
+      }
+    },
+    "notes": {
+      "type": "string",
+      "description": "Optional free-text annotation from the scorer"
+    }
+  },
+  "additionalProperties": false
+}
