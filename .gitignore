@@ -7,10 +7,41 @@ __pycache__/
 .ipynb_checkpoints/
 
 # data / outputs (large files)
-empirics_communityalignment/
 *.parquet
 *.csv
+*.tsv
 *.npy
+*.npz
+*.json
+*.pdf
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.feather
+
+# archives / binaries
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.gz
+
+# Keynote / Office docs
+*.key
+*.pptx
+*.docx
+*.xlsx
+*.numbers
+
+# image binaries we don't track (keep .png and .svg only)
+*.jpg
+*.jpeg
+*.gif
+*.tif
+*.tiff
+*.bmp
+*.pdf
 
 # OS
 .DS_Store
