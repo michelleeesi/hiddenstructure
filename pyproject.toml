@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hiddenstructure"
+version = "0.1.0"
+description = "Alignment externalities and welfare mechanisms across preference datasets"
+requires-python = ">=3.7"
+dependencies = [
+    "numpy",
+    "pandas",
+    "scipy",
+    "scikit-learn",
+    "matplotlib",
+    "pyarrow",   # Community Alignment parquet loaders
+]
+
+[project.optional-dependencies]
+notebooks = ["jupyter", "seaborn"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
