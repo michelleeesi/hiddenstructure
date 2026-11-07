@@ -3,7 +3,7 @@
 **Paper:** *Algorithmic Impact Reveals the Hidden Structure of Alignment*
 **Concern:** reviewers question the linear-utility assumption (and utilitarian aggregation).
 **Status:** theory response drafted + empirical study run on all four datasets. This doc records everything so it can be turned into an appendix + rebuttal.
-**Numbers (updated 2026-11-06):** every number in §5–§7 is the output of `scripts/linearity_robustness.py` (run from the repo root). The original exploratory scripts were lost; the rebuilt script reproduced the earlier 412 and Kidney numbers but not the Moral Machine and Community Alignment ones (an independent rebuild, `scripts/nonlinear_robustness.py`, agrees with the new numbers), so those were replaced. The main change: max welfare regret is **4.0%** (Community Alignment), not 2.4%.
+**Numbers (updated 2026-11-06):** every number in §5–§7 is the output of `scripts/linearity_robustness.py` (run from the repo root). The original exploratory scripts were lost; the rebuilt script reproduced the earlier 412 and Kidney numbers but not the Moral Machine and Community Alignment ones (a second, independent rebuild agreed with the new numbers before it was removed), so those were replaced. The main change: max welfare regret is **4.0%** (Community Alignment), not 2.4%.
 
 ---
 
